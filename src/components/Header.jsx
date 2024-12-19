@@ -12,12 +12,12 @@ const Header = () => {
       {/* Logo */}
       <div className="h-full flex items-center">
         <img
-          src={"/src/assets/LogoOtr.png"}
+          src={"/public/LogoOtr.png"}
           className="w-56 hidden lg:block"
           alt="Company Logo"
         />
         <img
-          src={"/src/assets/brandmark.png"}
+          src={"/public/brandmark.png"}
           className="w-16 mx-5 lg:hidden"
           alt="Mobile Brand Logo"
         />
