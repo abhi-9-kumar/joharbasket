@@ -26,6 +26,10 @@ const Footer = () => {
           <p className="text-gray-100 text-[18px] hover:text-gray-300 font-semibold py-2">
             businessjoharbasket@gmail.com
           </p>
+          <div className="transition-all ease-in-out hover:scale-105">
+          <a href="https://www.instagram.com/joharbasket?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-100 text-[30px]  font-bold py-2">Instagram</a>
+          </div>
+          
         </div>
       </div>
 

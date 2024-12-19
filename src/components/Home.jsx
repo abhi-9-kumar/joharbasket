@@ -3,13 +3,15 @@ import { useEffect, useRef, useState } from "react";
 
 const Home = () => {
   return (
-    <section className="w-full py-12 mt-20 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto justify-center">
+    <section className="w-full py-8 mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
       {/* Left Section */}
-      <div className="px-2"><ShuffleGrid /></div>
+      <div className="px-2">
+        <ShuffleGrid />
+      </div>
 
       {/* Right Section */}
-      <div className="mx-10">
-        <span className="block mb-4 text-md lg:text-2xl text-slate-700">
+      <div className="mx-10 lg:mx-14">
+        <span className="block mb-4 text-md lg:text-2xl text-slate-700 -top-14">
           Groceries Made Simple, Just for You.
         </span>
         <h3 className="text-6xl font-semibold">Johar Basket</h3>
@@ -28,7 +30,6 @@ const Home = () => {
     </section>
   );
 };
-
 
 // Square Component: Renders individual grid items
 const Square = ({ src }) => (
@@ -70,7 +71,6 @@ const shuffle = (array) => {
 
 // Image Data for Squares
 const squareData = [
-  { id: 1, src: "https://media.istockphoto.com/id/1411210350/photo/indian-woman-shopping-at-grocery-store.webp" },
   { id: 2, src: "https://images.unsplash.com/photo-1597354984706-fac992d9306f?q=80&w=1888&auto=format&fit=crop" },
   { id: 3, src: "https://images.unsplash.com/photo-1633536706502-8072f956614a?q=80&w=1935&auto=format&fit=crop" },
   { id: 4, src: "https://plus.unsplash.com/premium_photo-1673793535072-148e7ef7bd41?q=80&w=1887&auto=format&fit=crop" },
@@ -81,10 +81,7 @@ const squareData = [
   { id: 9, src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d" },
   { id: 10, src: "https://c7.alamy.com/comp/HXYTGP/snack-chip-selection-at-grocery-store-HXYTGP.jpg" },
   { id: 11, src: "https://c7.alamy.com/comp/CPGAA0/grocery-items-in-supermarket-CPGAA0.jpg" },
-  { id: 12, src: "https://c7.alamy.com/comp/KW0FMD/light-bulbs-and-globes-on-sale-in-a-sydney-supermarketaustralia-KW0FMD.jpg" },
   { id: 13, src: "https://c7.alamy.com/comp/M4N5WR/variety-types-of-indian-snacks-selling-in-the-shop-M4N5WR.jpg" },
-  { id: 14, src: "https://media.istockphoto.com/id/1603554458/photo/close-up-of-rich-and-spicy-makhana-mix-indian-namkeen.jpg" },
-  { id: 15, src: "https://images.unsplash.com/photo-1617694076477-701476d1bd29" },
   { id: 16, src: "https://plus.unsplash.com/premium_photo-1682090260563-191f8160ca48" },
 ];
 
