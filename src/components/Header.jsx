@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleSharp } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
+import logo1 from '../../public/LogoOtr.png'
+import logo2 from '../../public/brandmark.png'
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -12,12 +14,12 @@ const Header = () => {
       {/* Logo */}
       <div className="h-full flex items-center">
         <img
-          src={"/public/LogoOtr.png"}
+          src={logo1}
           className="w-56 hidden lg:block"
           alt="Company Logo"
         />
         <img
-          src={"/public/brandmark.png"}
+          src={logo2}
           className="w-16 mx-5 lg:hidden"
           alt="Mobile Brand Logo"
         />
